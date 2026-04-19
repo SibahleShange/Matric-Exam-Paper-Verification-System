@@ -9,7 +9,7 @@ import {
   ClipboardList,
   TrendingUp,
 } from "lucide-react";
-import heroImage from "@/assets/hero-exam.jpg";
+import heroImage from "@/assets/hero-exam.png";
 import markingImage from "@/assets/marking-paper.jpg";
 
 const entries = generateDemoEntries();
