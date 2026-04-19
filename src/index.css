@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 30% 96%;
+    --foreground: 220 50% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 50% 10%;
+
+    --primary: 216 72% 15%;
+    --primary-foreground: 220 30% 96%;
+
+    --secondary: 212 45% 37%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 216 20% 90%;
+    --muted-foreground: 216 15% 45%;
+
+    --accent: 195 55% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 10%;
+
+    --border: 214 20% 85%;
+    --input: 214 20% 85%;
+    --ring: 216 72% 15%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 216 72% 15%;
+    --sidebar-foreground: 220 20% 85%;
+    --sidebar-primary: 195 55% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 216 60% 22%;
+    --sidebar-accent-foreground: 220 20% 90%;
+    --sidebar-border: 216 50% 25%;
+    --sidebar-ring: 195 55% 50%;
+
+    --font-heading: 'Archivo Black', sans-serif;
+    --font-body: 'Hind', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
